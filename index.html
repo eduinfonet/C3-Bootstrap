@@ -6,280 +6,516 @@
     <title>Bootstrap</title>
     <link rel="stylesheet" href="assets/css/bootstrap.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/52801316e9.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
+    <!-- header -->
     <header>
-      <div>
-        <nav class="container navbar navbar-expand-lg bg-body-tertiary">
-          <div class="container-fluid">
-            <h1 class="fw-bold display-4 text-primary">
-              Reve<span class="text-secondary">al</span>
-            </h1>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
+      <nav class="container navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <h1 class="fw-bold display-4 text-primary">
+            Reve<span class="text-secondary">al</span>
+          </h1>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a
-                    class="nav-link text-primary fs-4 fw-bold"
-                    aria-current="page"
-                    href="#"
-                    >Home</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-primary fs-4 fw-bold" href="#"
-                    >About</a
-                  >
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle text-primary fs-4 fw-bold"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Services
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li><hr class="dropdown-divider" /></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link text-primary fs-4 fw-bold"
-                    href="#"
-                    aria-disabled="true"
-                    >Login</a
-                  >
-                </li>
-              </ul>
-            </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-primary fs-4 fw-bold"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-primary fs-4 fw-bold" href="#">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-primary fs-4 fw-bold"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Services
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Another action</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-primary fs-4 fw-bold"
+                  href="#"
+                  aria-disabled="true"
+                  >Login</a
+                >
+              </li>
+            </ul>
           </div>
-        </nav>
-      </div>
+        </div>
+      </nav>
     </header>
+    <!-- carousel -->
     <section>
-      <div id="carouselExampleCaptions" class="carousel slide">
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="3"
-            aria-label="Slide 4"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="4"
-            aria-label="Slide 5"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="5"
-            aria-label="Slide 6"
-          ></button>
-        </div>
+      <div>
+        <div
+          id="carouselExampleAutoplaying"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="4"
+              aria-label="Slide 5"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="5"
+              aria-label="Slide 6"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div
+                class="banner-img1 d-flex justify-content-center align-items-center"
+              >
+                <div class="text-center">
+                  <h1 class="display-3 fw-bold text-primary">
+                    Making
+                    <span class="text-secondary text-decoration-underline"
+                      >your Ideas</span
+                    >
+                    <br />
+                    Happen!
+                  </h1>
+                  <p class="text-primary fw-bold">
+                    The most informative blockchain news. Publishing multiple
+                    articles and videod daily.
+                  </p>
+                  <button class="btn btn-primary border-0">Get Started</button>
+                  <button class="btn btn-secondary border-0">
+                    Our Projects
+                  </button>
+                </div>
+              </div>
+            </div>
 
-        <div class="carousel-inner">
-          <!-- carousal slide 1 -->
-          <div class="carousel-item active">
-            <div
-              class="banner-img1 d-flex justify-content-center align-items-center"
-            >
-              <div class="text-center">
-                <h1 class="display-3 fw-bold text-primary">
-                  Making
-                  <span class="text-secondary text-decoration-underline"
-                    >your Ideas</span
-                  >
-                  <br />
-                  Happen!
-                </h1>
-                <p class="text-primary fw-bold">
-                  The most informative blockchain news. Publishing multiple
-                  articles and videod daily.
-                </p>
-                <button class="btn btn-primary border-0">Get Started</button>
-                <button class="btn btn-secondary border-0">Our Projects</button>
+            <div class="carousel-item">
+              <div
+                class="banner-img2 d-flex justify-content-center align-items-center"
+              >
+                <div class="text-center">
+                  <h1 class="display-3 fw-bold text-primary">
+                    Making
+                    <span class="text-secondary text-decoration-underline"
+                      >your Ideas</span
+                    >
+                    <br />
+                    Happen!
+                  </h1>
+                  <p class="text-primary fw-bold">
+                    The most informative blockchain news. Publishing multiple
+                    articles and videod daily.
+                  </p>
+                  <button class="btn btn-primary border-0">Get Started</button>
+                  <button class="btn btn-secondary border-0">
+                    Our Projects
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div
+                class="banner-img3 d-flex justify-content-center align-items-center"
+              >
+                <div class="text-center">
+                  <h1 class="display-3 fw-bold text-primary">
+                    Making
+                    <span class="text-secondary text-decoration-underline"
+                      >your Ideas</span
+                    >
+                    <br />
+                    Happen!
+                  </h1>
+                  <p class="text-primary fw-bold">
+                    The most informative blockchain news. Publishing multiple
+                    articles and videod daily.
+                  </p>
+                  <button class="btn btn-primary border-0">Get Started</button>
+                  <button class="btn btn-secondary border-0">
+                    Our Projects
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div
+                class="banner-img4 d-flex justify-content-center align-items-center"
+              >
+                <div class="text-center">
+                  <h1 class="display-3 fw-bold text-primary">
+                    Making
+                    <span class="text-secondary text-decoration-underline"
+                      >your Ideas</span
+                    >
+                    <br />
+                    Happen!
+                  </h1>
+                  <p class="text-primary fw-bold">
+                    The most informative blockchain news. Publishing multiple
+                    articles and videod daily.
+                  </p>
+                  <button class="btn btn-primary border-0">Get Started</button>
+                  <button class="btn btn-secondary border-0">
+                    Our Projects
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div
+                class="banner-img5 d-flex justify-content-center align-items-center"
+              >
+                <div class="text-center">
+                  <h1 class="display-3 fw-bold text-primary">
+                    Making
+                    <span class="text-secondary text-decoration-underline"
+                      >your Ideas</span
+                    >
+                    <br />
+                    Happen!
+                  </h1>
+                  <p class="text-primary fw-bold">
+                    The most informative blockchain news. Publishing multiple
+                    articles and videod daily.
+                  </p>
+                  <button class="btn btn-primary border-0">Get Started</button>
+                  <button class="btn btn-secondary border-0">
+                    Our Projects
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div
+                class="banner-img6 d-flex justify-content-center align-items-center"
+              >
+                <div class="text-center">
+                  <h1 class="display-3 fw-bold text-primary">
+                    Making
+                    <span class="text-secondary text-decoration-underline"
+                      >your Ideas</span
+                    >
+                    <br />
+                    Happen!
+                  </h1>
+                  <p class="text-primary fw-bold">
+                    The most informative blockchain news. Publishing multiple
+                    articles and videod daily.
+                  </p>
+                  <button class="btn btn-primary border-0">Get Started</button>
+                  <button class="btn btn-secondary border-0">
+                    Our Projects
+                  </button>
+                </div>
               </div>
             </div>
           </div>
-          <!-- carousal slide 2 -->
-          <div class="carousel-item">
-            <div
-              class="banner-img2 d-flex justify-content-center align-items-center"
-            >
-              <div class="text-center">
-                <h1 class="display-3 fw-bold text-primary">
-                  Making
-                  <span class="text-secondary text-decoration-underline"
-                    >your Ideas</span
-                  >
-                  <br />
-                  Happen!
-                </h1>
-                <p class="text-primary fw-bold">
-                  The most informative blockchain news. Publishing multiple
-                  articles and videod daily.
-                </p>
-                <button class="btn btn-primary border-0">Get Started</button>
-                <button class="btn btn-secondary border-0">Our Projects</button>
-              </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="row my-5 py-5 d-flex align-items-center">
+        <div class="col-md-6">
+          <img class="w-100 img-fluid" src="assets/img/about-img.jpg" alt="" />
+        </div>
+        <div class="col-md-6">
+          <h1 class="text-primary fw-bold">Who are You?</h1>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis
+            aliquid, laborum culpa nihil nisi nulla modi nesciunt architecto
+            ratione. Aliquid.
+          </p>
+          <ul>
+            <li>Lorem ipsum dolor sit amet consectetur adipi</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipi</li>
+            <li>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure
+              architecto amet praesentium similique perferendis labore unde vero
+              eos asperiores illo veritatis aliquid, inventore, a quam officia
+              ab libero! Sapiente, repellendus?
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="container my-5 py-5">
+      <div class="">
+        <h1 class="text-primary fw-bold">Services</h1>
+        <p class="fs-5">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid est
+          quod asperiores eveniet hic, enim quidem repudiandae nihil incidunt
+          similique sequi assumenda dolorum minus laborum optio qui quia quo
+          delectus. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Sit, magni?
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div
+            class="d-flex justify-content-center align-items-center shadow-lg p-4"
+          >
+            <i class="fa-solid fa-brain fa-4x text-secondary"></i>
+
+            <div class="ms-3">
+              <h3 class="text-secondary">Digital Information</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Suscipit ratione enim, minima autem unde aspernatur a,
+                praesentium eum veritatis at neque sequi eius harum esse? Nam et
+                natus ad expedita?
+              </p>
             </div>
           </div>
-          <!-- carousal slide 3 -->
-          <div class="carousel-item">
-            <div
-              class="banner-img3 d-flex justify-content-center align-items-center"
-            >
-              <div class="text-center">
-                <h1 class="display-3 fw-bold text-primary">
-                  Making
-                  <span class="text-secondary text-decoration-underline"
-                    >your Ideas</span
-                  >
-                  <br />
-                  Happen!
-                </h1>
-                <p class="text-primary fw-bold">
-                  The most informative blockchain news. Publishing multiple
-                  articles and videod daily.
-                </p>
-                <button class="btn btn-primary border-0">Get Started</button>
-                <button class="btn btn-secondary border-0">Our Projects</button>
-              </div>
-            </div>
-          </div>
-          <!-- carousal slide 4 -->
-          <div class="carousel-item">
-            <div
-              class="banner-img4 d-flex justify-content-center align-items-center"
-            >
-              <div class="text-center">
-                <h1 class="display-3 fw-bold text-primary">
-                  Making
-                  <span class="text-secondary text-decoration-underline"
-                    >your Ideas</span
-                  >
-                  <br />
-                  Happen!
-                </h1>
-                <p class="text-primary fw-bold">
-                  The most informative blockchain news. Publishing multiple
-                  articles and videod daily.
-                </p>
-                <button class="btn btn-primary border-0">Get Started</button>
-                <button class="btn btn-secondary border-0">Our Projects</button>
-              </div>
-            </div>
-          </div>
-          <!-- carousal slide 5 -->
-          <div class="carousel-item">
-            <div
-              class="banner-img5 d-flex justify-content-center align-items-center"
-            >
-              <div class="text-center">
-                <h1 class="display-3 fw-bold text-primary">
-                  Making
-                  <span class="text-secondary text-decoration-underline"
-                    >your Ideas</span
-                  >
-                  <br />
-                  Happen!
-                </h1>
-                <p class="text-primary fw-bold">
-                  The most informative blockchain news. Publishing multiple
-                  articles and videod daily.
-                </p>
-                <button class="btn btn-primary border-0">Get Started</button>
-                <button class="btn btn-secondary border-0">Our Projects</button>
-              </div>
-            </div>
-          </div>
-          <!-- carousal slide 6 -->
-          <div class="carousel-item">
-            <div
-              class="banner-img6 d-flex justify-content-center align-items-center"
-            >
-              <div class="text-center">
-                <h1 class="display-3 fw-bold text-primary">
-                  Making
-                  <span class="text-secondary text-decoration-underline"
-                    >your Ideas</span
-                  >
-                  <br />
-                  Happen!
-                </h1>
-                <p class="text-primary fw-bold">
-                  The most informative blockchain news. Publishing multiple
-                  articles and videod daily.
-                </p>
-                <button class="btn btn-primary border-0">Get Started</button>
-                <button class="btn btn-secondary border-0">Our Projects</button>
-              </div>
+          <div
+            class="d-flex justify-content-center align-items-center shadow-lg p-4"
+          >
+            <i class="fa-solid fa-microchip fa-4x text-secondary"></i>
+
+            <div class="ms-3">
+              <h3 class="text-secondary">IT Infrastructure</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Suscipit ratione enim, minima autem unde aspernatur a,
+                praesentium eum veritatis at neque sequi eius harum esse? Nam et
+                natus ad expedita?
+              </p>
             </div>
           </div>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
+        <div class="col-md-6">
+          <div
+            class="d-flex justify-content-center align-items-center shadow-lg p-4"
+          >
+            <i class="fa-solid fa-swatchbook fa-4x text-secondary"></i>
+
+            <div class="ms-3">
+              <h3 class="text-secondary">UI/UX Design</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Suscipit ratione enim, minima autem unde aspernatur a,
+                praesentium eum veritatis at neque sequi eius harum esse? Nam et
+                natus ad expedita?
+              </p>
+            </div>
+          </div>
+          <div
+            class="d-flex justify-content-center align-items-center shadow-lg p-4"
+          >
+            <i
+              class="fa-solid fa-magnifying-glass-chart fa-4x text-secondary"
+            ></i>
+
+            <div class="ms-3">
+              <h3 class="text-secondary">Business Analysis</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Suscipit ratione enim, minima autem unde aspernatur a,
+                praesentium eum veritatis at neque sequi eius harum esse? Nam et
+                natus ad expedita?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container my-5 py-5">
+      <h1 class="text-primary fw-bold">Clients</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis aliquam
+        ex deserunt voluptates alias perspiciatis nostrum quod possimus
+        similique, laboriosam reiciendis nihil laudantium, saepe facere
+        consequatur consequuntur dolor natus repellendus, sit asperiores
+        blanditiis pariatur id earum libero. Quo, sapiente similique beatae in
+        nesciunt aperiam est, repellendus, incidunt possimus amet molestias?
+      </p>
+      <div class="d-flex justify-content-between flex-wrap">
+        <img class="client-img" src="assets/img/client-1.png" alt="" />
+        <img class="client-img" src="assets/img/client-2.png" alt="" />
+        <img class="client-img" src="assets/img/client-3.png" alt="" />
+        <img class="client-img" src="assets/img/client-4.png" alt="" />
+        <img class="client-img" src="assets/img/client-5.png" alt="" />
+        <img class="client-img" src="assets/img/client-6.png" alt="" />
+        <img class="client-img" src="assets/img/client-7.png" alt="" />
+        <img class="client-img" src="assets/img/client-8.png" alt="" />
+      </div>
+    </section>
+
+    <section class="bg-primary">
+      <div
+        class="container d-flex flex-column align-items-start text-white my-5 py-5"
+      >
+        <h1>Call To Action</h1>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit
+          voluptatibus vitae natus ipsam reprehenderit similique dolor
+          consequuntur laborum sequi illo praesentium tempora asperiores, itaque
+          corporis quo, optio dolorem, dolorum incidunt.
+        </p>
+        <button class="btn btn-outline-secondary text-white">
+          Call to Action
         </button>
       </div>
     </section>
+
+    <section class="container my-5 py-5">
+      <h1 class="text-primary fw-bold">Our Team</h1>
+      <p class="fs-5">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus!
+      </p>
+      <div class="d-flex gap-3">
+        <div class="card shadow" style="width: 18rem">
+          <div class="text-center my-3">
+            <img
+              src="assets/img/team-1.jpg"
+              class="card-img-top border rounded-circle w-50 border-dark-subtle border-3"
+              alt="..."
+            />
+          </div>
+          <div class="card-body d-flex flex-column align-items-center">
+            <h5 class="card-title text-secondary fw-bold">Walter White</h5>
+            <p class="fst-italic">Chef Executive Officer</p>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+        </div>
+        <div class="card shadow" style="width: 18rem">
+          <div class="text-center my-3">
+            <img
+              src="assets/img/team-2.jpg"
+              class="card-img-top border rounded-circle w-50 border-dark-subtle border-3"
+              alt="..."
+            />
+          </div>
+          <div class="card-body d-flex flex-column align-items-center">
+            <h5 class="card-title text-secondary fw-bold">Sarah Jhinson</h5>
+            <p class="fst-italic">Product Manager</p>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+        </div>
+        <div class="card shadow" style="width: 18rem">
+          <div class="text-center my-3">
+            <img
+              src="assets/img/team-3.jpg"
+              class="card-img-top border rounded-circle w-50 border-dark-subtle border-3"
+              alt="..."
+            />
+          </div>
+          <div class="card-body d-flex flex-column align-items-center">
+            <h5 class="card-title text-secondary fw-bold">Willam Anderson</h5>
+            <p class="fst-italic">CTO</p>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+        </div>
+        <div class="card shadow" style="width: 18rem">
+          <div class="text-center my-3">
+            <img
+              src="assets/img/team-4.jpg"
+              class="card-img-top border rounded-circle w-50 border-dark-subtle border-3"
+              alt="..."
+            />
+          </div>
+          <div class="card-body d-flex flex-column align-items-center">
+            <h5 class="card-title text-secondary fw-bold">Amadra Jesica</h5>
+            <p class="fst-italic">Accountant</p>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <script src="assets/js/bootstrap.js"></script>
   </body>
 </html>
